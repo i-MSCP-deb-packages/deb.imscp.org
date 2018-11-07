@@ -14,13 +14,13 @@ All our packages for Debian/Devuan distributions are made available through our
 [Debian](https://deb.imscp.org/debian) APT repository.
 
 #### Supported Debian distributions
-- Jessie 8.x (amd64, i386)
-- Stretch 9.x (amd64, i386)
+- Jessie 8.x (amd64, arm64, armhf, i386)
+- Stretch 9.x (amd64, arm64, armhf, i386)
 
 #### Supported Devuan distributions
 
-- Jessie 1.x (amd64, i386)
-- ASCII 2.x (amd64, i386)
+- Jessie 1.x (amd64, arm64, armhf, i386)
+- ASCII 2.x (amd64, arm64, armhf, i386)
 
 #### Repository setup
 
@@ -39,9 +39,9 @@ All our packages for Ubuntu distributions are made available through our
 
 #### Supported Ubuntu distributions
 
-- Trusty Thar 14.04 (amd64, i386)
-- Xenial Xerus 16.04 (amd64, i386)
-- Bionic Beaver 18.04 (adm64, i386)
+- Trusty Thar 14.04 (amd64, arm64, armhf, i386)
+- Xenial Xerus 16.04 (amd64, arm64, armhf, i386)
+- Bionic Beaver 18.04 (adm64, arm64, armhf, i386)
 
 Note that only LTS versions are supported by us.
 
