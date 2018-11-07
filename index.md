@@ -11,7 +11,7 @@ Most important changes and news are published through our
 ### Packages for Debian/Devuan distributions
 
 All our packages for Debian/Devuan distributions are made available through our
-[Debian](https://deb.imscp.org/debian) APT repository.
+[Debian](https://deb.imscp.org/debian){:target="_blank"} APT repository.
 
 #### Supported Debian distributions
 - Jessie 8.x (amd64, arm64, armhf, i386)
@@ -35,7 +35,7 @@ apt-get update
 ### Packages for Ubuntu distributions
 
 All our packages for Ubuntu distributions are made available through our
-[Ubuntu](https://deb.imscp.org/ubuntu) APT repository.
+[Ubuntu](https://deb.imscp.org/ubuntu){:target="_blank"} APT repository.
 
 #### Supported Ubuntu distributions
 
