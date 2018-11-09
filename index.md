@@ -8,52 +8,48 @@ packages are provided to fullfit i-MSCP softwares and plugins requirements.
 Most important changes and news are published through our
 [twitter](https://twitter.com/debimscporg) account.
 
+### Repository setup
+
+You can setup our APT repository for your distribution as follows:
+
+```shell
+apt-get -y install apt-transport-https ca-certificates lsb-release wget
+wget -O /etc/apt/trusted.gpg.d/imscp.gpg https://deb.imscp.org/imscp.gpg
+sh -c 'echo "deb https://deb.imscp.org/$(lsb_release -si | tr '[:upper:]' '[:lower:]') $(lsb_release -sc) main" > /etc/apt/souces.list.d/imscp.list'
+apt-get update
+```
+
+See below for more details about supported distribution and architectures.
+
 ### Packages for Debian/Devuan distributions
 
 All our packages for Debian/Devuan distributions are made available through our
 [Debian](https://deb.imscp.org/debian){:target="_blank"} APT repository.
 
-#### Supported Debian distributions
-- Jessie 8.x (amd64, arm64, armhf, i386)
-- Stretch 9.x (amd64, arm64, armhf, i386)
+#### Supported distributions
 
-#### Supported Devuan distributions
+- Debian Jessie 8.x,
+- Debian Stretch 9.x
+- Devuan Jessie 1.x
+- Devuan ASCII 2.x
 
-- Jessie 1.x (amd64, arm64, armhf, i386)
-- ASCII 2.x (amd64, arm64, armhf, i386)
-
-#### Repository setup
-
-You can setup the APT repository as follows:
-```shell
-apt-get -y install apt-transport-https lsb-release ca-certificates
-wget -O /etc/apt/trusted.gpg.d/imscp.gpg https://deb.imscp.org/debian/apt.gpg
-sh -c 'echo "deb https://deb.imscp.org/debian/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/imscp.list'
-apt-get update
-```
+Supported architectures: amd64, arm64, armhf, i386
 
 ### Packages for Ubuntu distributions
 
 All our packages for Ubuntu distributions are made available through our
 [Ubuntu](https://deb.imscp.org/ubuntu){:target="_blank"} APT repository.
 
-#### Supported Ubuntu distributions
+#### Supported distributions
 
-- Trusty Thar 14.04 (amd64, arm64, armhf, i386)
-- Xenial Xerus 16.04 (amd64, arm64, armhf, i386)
-- Bionic Beaver 18.04 (adm64, arm64, armhf, i386)
+- Trusty Thar 14.04
+- Xenial Xerus 16.04
+- Bionic Beaver 18.04
 
 Note that only LTS versions are supported by us.
 
-#### Repository setup
+Supported architectures: amd64, arm64, armhf, i386
 
-You can setup the APT repository as follows:
-```shell
-sudo apt-get -y install apt-transport-https lsb-release ca-certificates
-sudo wget -O /etc/apt/trusted.gpg.d/imscp.gpg https://deb.imscp.org/ubuntu/apt.gpg
-sudo sh -c 'echo "deb https://deb.imscp.org/ubuntu/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/imscp.list'
-sudo apt-get update
-```
 ### Bug Reporting
 
 Please report any bug found in our packages by creating an issue in our [Bug Tracker](https://youtrack.i-mscp.net/){:target="_blank"}.
