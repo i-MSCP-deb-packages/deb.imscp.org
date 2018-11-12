@@ -15,7 +15,7 @@ You can setup our APT repository for your distribution as follows:
 ```shell
 apt-get -y install apt-transport-https ca-certificates lsb-release wget
 wget -O /etc/apt/trusted.gpg.d/imscp.gpg https://deb.imscp.org/imscp.gpg
-sh -c 'echo "deb https://deb.imscp.org/$(lsb_release -si | tr '[:upper:]' '[:lower:]') $(lsb_release -sc) main" > /etc/apt/souces.list.d/imscp.list'
+sh -c 'echo "deb https://deb.imscp.org/$(lsb_release -si | tr '[:upper:]' '[:lower:]') $(lsb_release -sc) main" > /etc/apt/sources.list.d/imscp.list'
 apt-get update
 ```
 
